@@ -1,16 +1,3 @@
-Listed directory pbo
-Viewed App.java:1-91
-Listed directory presentation
-Listed directory domain
-Listed directory service
-Listed directory repository
-Viewed AdminMenu.java:1-227
-Viewed AuthService.java:1-18
-Viewed PenggunaRepository.java:1-55
-Viewed KendaraanRepository.java:1-138
-
-Tentu! Berdasarkan analisis kode sumber pada proyek PBO Anda, berikut adalah rincian alur kerja (data flow & execution flow) aplikasi dari awal dijalankan hingga proses manajemen data. Penjelasan ini disusun agar mudah Anda presentasikan di rapat kelompok:
-
 ### 1. Entry Point Aplikasi (Gerbang Utama)
 *   **File Utama:** Aplikasi ini menggunakan `App.java` (berada di paket `project.pbo`) sebagai kelas utama atau *entry point* saat Java Virtual Machine (JVM) dijalankan.
 *   **Inisialisasi Awal:** Saat pertama kali di-*run*, JVM akan mengeksekusi metode `main(String[] args)`. Di sini, kelas `App` akan menginisialisasi objek statis `Scanner input` (untuk menangkap teks dari keyboard) dan `AuthService authService` (untuk melayani logika login).
@@ -46,5 +33,3 @@ Tentu! Berdasarkan analisis kode sumber pada proyek PBO Anda, berikut adalah rin
     *   Berhasil: `[SUKSES] Data kendaraan berhasil disimpan ke json...`
     *   Gagal/Kesalahan: `[GAGAL] Plat Nomor B1234XYZ sudah terdaftar di sistem!`
 *   Setelah pesan ini dicetak, alur kembali berputar ke menu utama (`do-while` di layer presentasi) sehingga aplikasi terasa *interactive* dan tidak *crash* secara tiba-tiba.
-
-Semoga rincian ini membantu Anda menjelaskan alur *Data Flow* dan Arsitektur Kode aplikasi ini kepada rekan-rekan kelompok Anda. Selamat bersiap-siap untuk pertemuannya! Silakan sampaikan jika ada kelas spesifik yang ingin dipertajam pembahasannya.
